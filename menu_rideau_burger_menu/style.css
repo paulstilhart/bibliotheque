@@ -22,32 +22,33 @@ h1 {
     font-size: 50px;
     font-weight: 100;
     text-align: center;
-    color: #f1f1f1;
+    color: #f1f1f1;/* blanc cassé */
 }
 
 h1 span {
     font-weight: 600;
 }
 
+/* boutton qui contient les spans qui sont des barres */
 .nav_toggler {
     position: fixed;
-    z-index: 10;
-    top: 30px;
+    z-index: 10; /* au dessus de la navigation */
+    top: 15px;
     right: 30px;
     height: 50px;
     width: 50px;
     border: none;
-    outline: none;
+    outline:none;/* ici rien pour que ce soit + sympa, mais si accessibilité il faut le rajouter */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background:transparent; /* on voit que les spans */
 }
 
 .line {
     position: absolute;
-    display: block;
+    display: block; /* pour pouvoir donner des dimensions aux éléments */
     width: 100%;
     height: 2px;
     background: #f1f1f1;
@@ -63,6 +64,7 @@ h1 span {
     transform: translateY(10px);   
 }
 
+/* Pour créer la croix quand on clique dessus */
 .nav_toggler.active .l1{
     transform: translateY(0px) rotate(135deg);
 }
@@ -71,4 +73,30 @@ h1 span {
 }
 .nav_toggler.active .l3{
     transform: translateY(0px) rotate(-135deg);
+}
+
+nav{
+    position:fixed;/* toujours visible */
+    width: 100vw;
+    min-height: 60vh    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    border-bottom:1px solid white;
+    transform: translateY(-100%);/* simple propriété qui permet de le faire disparaitre (-100% de sa hauteur) */
+    transition: transform 0.3s cubic-bezier(0.73,0.11,0.67,0.84);
+}
+
+nav.active{
+    transform: translate(0);
+}
+
+nav a{
+    color: #f1f1f1;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0px;
+    text-decoration: none;
 }
