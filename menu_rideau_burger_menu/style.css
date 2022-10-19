@@ -78,7 +78,7 @@ h1 span {
 nav{
     position:fixed;/* toujours visible */
     width: 100vw;
-    min-height: 60vh    ;
+    min-height: 50vh    ;
     display: flex;
     justify-content: center;
     align-items: center;
