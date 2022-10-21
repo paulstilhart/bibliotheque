@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenêtre modale</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- En général en début de page car s'ouvre "par dessus le reste" -->
+    <div class="modal_container">
+        <div class="overlay modal_trigger"></div>
+        <div class="modal">
+            <button class="modal_close modal_trigger">X</button>
+            <h1>Titre modale</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum sint blanditiis nisi unde
+                placeat!</p>
+        </div>
+    </div>
+
+    <button class="modal_button modal_trigger">Ouvrir</button>
+</body>
+
+</html>
