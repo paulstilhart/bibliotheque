@@ -1,0 +1,41 @@
+/*==================== RESET CSS ====================*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+/*==================== FONT-FAMILY ====================*/
+html {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-style: normal;
+}
+
+
+
+
+/*==================== CONTENU ====================*/
+ul{
+    margin-left:50px;
+}
+
+h1{
+    margin:40px;
+    text-align: center;
+}
+
+h2{
+    margin-left:40px;
+    margin-bottom:10px;
+}
+
+.iframe_container{
+    margin:50px;
+}
+iframe{
+    width: 100%;
+}
